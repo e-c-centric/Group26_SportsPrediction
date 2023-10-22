@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Player Attributes Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff91;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #d14cf9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #561a84;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Player Attributes Form</h1>
+    <form action="/" method="post">
+        <!-- Attributes related to 'pace' -->
+        <label for="pace">Pace:</label>
+        <input type="number" id="pace" name="pace" min="0" step="1" required>
+
+        <!-- Attributes related to 'shooting' -->
+        <label for="shooting">Shooting:</label>
+        <input type="number" id="shooting" name="shooting" min="0" step="1" required>
+
+        <!-- Attributes related to 'passing' -->
+        <label for="passing">Passing:</label>
+        <input type="number" id="passing" name="passing" min="0" step="1" required>
+
+        <!-- Attributes related to 'dribbling' -->
+        <label for="dribbling">Dribbling:</label>
+        <input type="number" id="dribbling" name="dribbling" min="0" step="1" required>
+
+        <!-- Attributes related to 'defending' -->
+        <label for="defending">Defending:</label>
+        <input type="number" id="defending" name="defending" min="0" step="1" required>
+
+        <!-- Attributes related to 'physic' -->
+        <label for="physic">Physic:</label>
+        <input type="number" id="physic" name="physic" min="0" step="1" required>
+
+        <!-- Attributes related to 'attacking_crossing' -->
+        <label for="attacking_crossing">Attacking Crossing:</label>
+        <input type="number" id="attacking_crossing" name="attacking_crossing" min="0" step="1" required>
+
+        <!-- Attributes related to 'attacking_finishing' -->
+        <label for="attacking_finishing">Attacking Finishing:</label>
+        <input type="number" id="attacking_finishing" name="attacking_finishing" min="0" step="1" required>
+
+        <!-- Attributes related to 'attacking_heading_accuracy' -->
+        <label for="attacking_heading_accuracy">Attacking Heading Accuracy:</label>
+        <input type="number" id="attacking_heading_accuracy" name="attacking_heading_accuracy" min="0" step="1" required>
+
+        <!-- Attributes related to 'attacking_short_passing' -->
+        <label for="attacking_short_passing">Attacking Short Passing:</label>
+        <input type="number" id="attacking_short_passing" name="attacking_short_passing" min="0" step="1" required>
+
+        <!-- Attributes related to 'attacking_volleys' -->
+        <label for="attacking_volleys">Attacking Volleys:</label>
+        <input type="number" id="attacking_volleys" name="attacking_volleys" min="0" step="1" required>
+
+        <!-- Attributes related to 'skill_dribbling' -->
+        <label for="skill_dribbling">Skill Dribbling:</label>
+        <input type="number" id="skill_dribbling" name="skill_dribbling" min="0" step="1" required>
+
+        <!-- Attributes related to 'skill_curve' -->
+        <label for="skill_curve">Skill Curve:</label>
+        <input type="number" id="skill_curve" name="skill_curve" min="0" step="1" required>
+
+        <!-- Attributes related to 'skill_fk_accuracy' -->
+        <label for="skill_fk_accuracy">Skill Free-Kick Accuracy:</label>
+        <input type="number" id="skill_fk_accuracy" name="skill_fk_accuracy" min="0" step="1" required>
+
+        <!-- Attributes related to 'skill_long_passing' -->
+        <label for="skill_long_passing">Skill Long Passing:</label>
+        <input type="number" id="skill_long_passing" name="skill_long_passing" min="0" step="1" required>
+
+        <!-- Attributes related to 'skill_ball_control' -->
+        <label for="skill_ball_control">Skill Ball Control:</label>
+        <input type="number" id="skill_ball_control" name="skill_ball_control" min="0" step="1" required>
+
+        <!-- Attributes related to 'movement_acceleration' -->
+        <label for="movement_acceleration">Movement Acceleration:</label>
+        <input type="number" id="movement_acceleration" name="movement_acceleration" min="0" step="1" required>
+
+        <!-- Attributes related to 'movement_sprint_speed' -->
+        <label for="movement_sprint_speed">Movement Sprint Speed:</label>
+        <input type="number" id="movement_sprint_speed" name="movement_sprint_speed" min="0" step="1" required>
+
+        <!-- Attributes related to 'movement_agility' -->
+        <label for="movement_agility">Movement Agility:</label>
+        <input type="number" id="movement_agility" name="movement_agility" min="0" step="1" required>
+
+        <!-- Attributes related to 'movement_reactions' -->
+        <label for="movement_reactions">Movement Reactions:</label>
+        <input type="number" id="movement_reactions" name="movement_reactions" min="0" step="1" required>
+
+        <!-- Attributes related to 'movement_balance' -->
+        <label for="movement_balance">Movement Balance:</label>
+        <input type="number" id="movement_balance" name="movement_balance" min="0" step="1" required>
+
+        <!-- Attributes related to 'power_shot_power' -->
+        <label for="power_shot_power">Power Shot Power:</label>
+        <input type="number" id="power_shot_power" name="power_shot_power" min="0" step="1" required>
+
+        <!-- Attributes related to 'power_jumping' -->
+        <label for="power_jumping">Power Jumping:</label>
+        <input type="number" id="power_jumping" name="power_jumping" min="0" step="1" required>
+
+        <!-- Attributes related to 'power_stamina' -->
+        <label for="power_stamina">Power Stamina:</label>
+        <input type="number" id="power_stamina" name="power_stamina" min="0" step="1" required>
+
+        <!-- Attributes related to 'power_strength' -->
+        <label for="power_strength">Power Strength:</label>
+        <input type="number" id="power_strength" name="power_strength" min="0" step="1" required>
+
+        <!-- Attributes related to 'power_long_shots' -->
+        <label for="power_long_shots">Power Long Shots:</label>
+        <input type="number" id="power_long_shots" name="power_long_shots" min="0" step="1" required>
+
+        <!-- Attributes related to 'mentality_aggression' -->
+        <label for="mentality_aggression">Mentality Aggression:</label>
+        <input type="number" id="mentality_aggression" name="mentality_aggression" min="0" step="1" required>
+
+        <!-- Attributes related to 'mentality_interceptions' -->
+        <label for="mentality_interceptions">Mentality Interceptions:</label>
+        <input type="number" id="mentality_interceptions" name="mentality_interceptions" min="0" step="1" required>
+
+        <!-- Attributes related to 'mentality_positioning' -->
+        <label for="mentality_positioning">Mentality Positioning:</label>
+        <input type="number" id="mentality_positioning" name="mentality_positioning" min="0" step="1" required>
+
+        <!-- Attributes related to 'mentality_vision' -->
+        <label for="mentality_vision">Mentality Vision:</label>
+        <input type="number" id="mentality_vision" name="mentality_vision" min="0" step="1" required>
+
+        <!-- Attributes related to 'mentality_penalties' -->
+        <label for="mentality_penalties">Mentality Penalties:</label>
+        <input type="number" id="mentality_penalties" name="mentality_penalties" min="0" step="1" required>
+
+        <!-- Attributes related to 'mentality_composure' -->
+        <label for="mentality_composure">Mentality Composure:</label>
+        <input type="number" id="mentality_composure" name="mentality_composure" min="0" step="1" required>
+
+        <!-- Attributes related to 'defending_marking_awareness' -->
+        <label for="defending_marking_awareness">Defending Marking Awareness:</label>
+        <input type="number" id="defending_marking_awareness" name="defending_marking_awareness" min="0" step="1" required>
+
+        <!-- Attributes related to 'defending_standing_tackle' -->
+        <label for="defending_standing_tackle">Defending Standing Tackle:</label>
+        <input type="number" id="defending_standing_tackle" name="defending_standing_tackle" min="0" step="1" required>
+
+        <!-- Attributes related to 'defending_sliding_tackle' -->
+        <label for="defending_sliding_tackle">Defending Sliding Tackle:</label>
+        <input type="number" id="defending_sliding_tackle" name="defending_sliding_tackle" min="0" step="1" required>
+
+        <!-- Attributes related to 'goalkeeping_diving' -->
+        <label for="goalkeeping_diving">Goalkeeping Diving:</label>
+        <input type="number" id="goalkeeping_diving" name="goalkeeping_diving" min="0" step="1" required>
+
+        <!-- Attributes related to 'goalkeeping_handling' -->
+        <label for="goalkeeping_handling">Goalkeeping Handling:</label>
+        <input type="number" id="goalkeeping_handling" name="goalkeeping_handling" min="0" step="1" required>
+
+        <!-- Attributes related to 'goalkeeping_kicking' -->
+        <label for="goalkeeping_kicking">Goalkeeping Kicking:</label>
+        <input type="number" id="goalkeeping_kicking" name="goalkeeping_kicking" min="0" step="1" required>
+
+        <!-- Attributes related to 'goalkeeping_positioning' -->
+        <label for="goalkeeping_positioning">Goalkeeping Positioning:</label>
+        <input type="number" id="goalkeeping_positioning" name="goalkeeping_positioning" min="0" step="1" required>
+
+        <!-- Attributes related to 'goalkeeping_reflexes' -->
+        <label for="goalkeeping_reflexes">Goalkeeping Reflexes:</label>
+        <input type="number" id="goalkeeping_reflexes" name="goalkeeping_reflexes" min="0" step="1" required>
+
+        <!-- Attributes related to 'goalkeeping_speed' -->
+        <label for="goalkeeping_speed">Goalkeeping Speed:</label>
+        <input type="number" id="goalkeeping_speed" name="goalkeeping_speed" min="0" step="1" required>
+
+        <!-- Attributes related to 'release_clause_eur' -->
+        <label for="release_clause_eur">Release Clause (in Euros):</label>
+        <input type="number" id="release_clause_eur" name="release_clause_eur" min="0" step="1" required>
+
+        <!-- Attributes related to 'wage_eur' -->
+        <label for="wage_eur">Wage (in Euros):</label>
+        <input type="number" id="wage_eur" name="wage_eur" min="0" step="1" required>
+
+        <!-- Attributes related to 'value_eur' -->
+        <label for="value_eur">Value (in Euros):</label>
+        <input type="number" id="value_eur" name="value_eur" min="0" step="1" required>
+
+        <!-- Attributes related to 'age' -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" step="1" required>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+
+</html>

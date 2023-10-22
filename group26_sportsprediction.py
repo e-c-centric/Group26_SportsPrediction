@@ -22,9 +22,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import GridSearchCV
 
-from google.colab import drive
-drive.mount('/content/drive')
-DatasetFifa21 = pd.read_csv('/content/drive/My Drive/Colab Notebooks/players_21.csv')
+DatasetFifa21 = pd.read_csv('players_21.csv')
 
 """**Data Preprocessing**"""
 
@@ -323,7 +321,7 @@ print("test score: {0:.4f}\n".format(score))
 Repeating the data preprocessing and feature extraction subsets on the FIFA 22 dataset
 """
 
-DatasetFifa22 = pd.read_csv('/content/drive/My Drive/Colab Notebooks/players_22.csv',low_memory = False)
+DatasetFifa22 = pd.read_csv('players_22.csv',low_memory = False)
 
 DatasetFifa22.head()
 

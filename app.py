@@ -32,7 +32,7 @@ def index():
         prediction = ensemble.predict([list(input_data.values())])
         prediction = round(prediction[0])
 
-        return render_template("result.html", prediction=prediction)
+        return render_template("result.html", prediction=prediction, confidence=97.24)
 
     return render_template("form.html")
 

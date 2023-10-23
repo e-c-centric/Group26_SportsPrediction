@@ -29,7 +29,8 @@ def index():
             value = float(request.form.get(attr, 0))
             input_data[attr] = value
 
-        prediction = round(ensemble.predict([list(input_data.values())]))
+        prediction = ensemble.predict([list(input_data.values())])
+        prediction = round(prediction[0])
 
         return render_template("result.html", prediction=prediction)
 
